@@ -1,179 +1,39 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> -->
-    <!-- My Library -->
-    <!-- <link rel="stylesheet" href="./grid.css">
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .container {
-            background-color: orange;
-            text-align: center;
-        }
-
-        h1 {
-            padding: 100px 0;
-            font-size: 50px;
-            color: #fff;
-            margin: 0;
-        }
-    </style>
-</head> -->
-<!-- <body> -->
-    <!-- thằng container không liên quan đến grid system, tạo ra chỉ để cho dễ thấy cái grid system
-     hoạt độn trên web ra sao -->
-    <!-- <div class="grid wide container">
-        <div class="row">
-            <h1>Column 1</h1>
-            <h1>Column 2</h1>
-            <h1>Column 3</h1>
-        </div>
-    </div>
-</body> -->
-<!-- </html> -->
-
-<!-- Comment hết đống trên vì chỉ cần xem để hiểu thôi (Theo video Tạo đối tượng Grid và Tạo đối tượng Row) -->
-<!-- Chú ý chỗ nào bắt đầu từ dấu ! để uncomment -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- My Library -->
+    <link rel="stylesheet" href="./grid.css">
     <style>
-      * {
-        box-sizing: border-box;
+      body {
+        margin: 0;
       }
-      .col {
+
+      .container {
+        background-color: orange;
         text-align: center;
-        background-color: #ccc;
-        background-clip: content-box;
-        margin-top: 8px;
-        margin-bottom: 8px;
+      }
+
+      h1 {
+        padding: 100px 0;
+        font-size: 50px;
+        color: #fff;
+        margin: 0;
       }
     </style>
-  </head>
-
-  <body>
-    <div class="grid wide">
+</head>
+<body>
+    <!-- thằng container không liên quan đến grid system, tạo ra chỉ để cho dễ thấy cái grid system hoạt độn trên web ra sao -->
+    <div class="grid wide container">
       <div class="row">
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-        <div class="col l-2 m-4 c-12">
-          <h2>l-2 m-4 c-12</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-3 m-6 c-6">
-          <h2>l-3 m-6 c-6</h2>
-        </div>
-        <div class="col l-3 m-6 c-6">
-          <h2>l-3 m-6 c-6</h2>
-        </div>
-        <div class="col l-3 m-6 c-6">
-          <h2>l-3 m-6 c-6</h2>
-        </div>
-        <div class="col l-3 m-6 c-6">
-          <h2>l-3 m-6 c-6</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-4 m-12 c-12">
-          <h2>l-4 m-12 c-12</h2>
-        </div>
-        <div class="col l-4 m-12 c-12">
-          <h2>l-4 m-12 c-12</h2>
-        </div>
-        <div class="col l-4 m-12 c-12">
-          <h2>l-4 m-12 c-12</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-6 m-6 c-12">
-          <h2>l-6 m-6 c-12</h2>
-        </div>
-        <div class="col l-6 m-6 c-12">
-          <h2>l-6 m-6 c-12</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-12 m-12 c-12">
-          <h2>l-12 m-12 c-12</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-4 m-0 c-0">
-          <h2>l-4 m-0 c-0</h2>
-        </div>
-        <div class="col l-8 m-12 c-12">
-          <h2>l-8 m-12 c-12</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-8 m-12 c-12">
-          <h2>l-8 m-12 c-12</h2>
-        </div>
-        <div class="col l-4 m-0 c-0">
-          <h2>l-4 m-0 c-0</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-4 m-4 c-6">
-          <h2>l-4 m-4 c-6</h2>
-        </div>
-        <div class="col l-4 m-4 c-6 l-o-4 m-o-4">
-          <h2>l-4 m-4 c-6 l-o-4 m-o-4</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col l-4 m-4 c-12 l-o-4 m-o-4">
-          <h2>l-4 m-4 c-12 l-o-4 m-o-4</h2>
-        </div>
+        <h1>Column 1</h1>
+        <h1>Column 2</h1>
+        <h1>Column 3</h1>
       </div>
     </div>
-  </body>
+</body>
 </html>
 
-<!-- Các bạn chú ý:
-Hãy thêm box-sizing: border-box; vào trang web của bạn. Ví dụ:
 
-<style> * { box-sizing: border-box; } </style>
-Nếu thiếu thuộc tính trên thì các column của bạn có thể không nằm trên một chiều ngang.
-
-Column là gì?
-
-Column nghĩa là cột, được sử dụng để chứa nội dung/thành phần hiển thị trên website của bạn. Column sử dụng padding trái/phải để tạo nên gutters - rãnh ngăn cách giữa các column trong Grid layout. Column luôn luôn là con trực tiếp của Row.
-
-Column được sử dụng với class "col", đi kèm theo đó là một số class "c-*" "m-*" và "l-*":
-
-- c-*: nghĩa là column, prefix class này có tác dụng trên mobile. * từ 0 tới 12. Trong đó 0 được sử dụng để ẩn column, 1 - 12 tương ứng với độ rộng chúng ta muốn sử dụng cho column (trên cơ sở 12 columns trong Grid system)
-- m-*: nghĩa là medium, prefix class này có tác dụng trên Tablet.
-- l-*: nghĩa là large, prefix class này có tác dụng trên PC. -->

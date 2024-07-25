@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style-level-1.css">
+</head>
+<body>
+    <div class="grid wide">
+        <div class="row">
+            <!-- Trường hợp 1 -->
+            <!-- .col.l-3*4>.item{Item $}
+             tạo 4 thẻ div với class col và l-3; bên trong có thêm thẻ .item, với nội dung Item được đếm theo thứ tự "$"  -->
+            <!-- <div class="col l-3">
+                <div class="item">Item 1</div>
+            </div>
+            <div class="col l-3">
+                <div class="item">Item 2</div>
+            </div>
+            <div class="col l-3">
+                <div class="item">Item 3</div>
+            </div>
+            <div class="col l-3">
+                <div class="item">Item 4</div>
+            </div> -->
+
+            <!-- Trường hợp 2 -->
+             <div class="col l-5">
+                <div class="item">IMAGE</div>
+             </div>
+             <div class="col l-7">
+                <div class="item">DESCRIPTION
+                    <div class="row">
+                        <div class="col l-4">Item 1</div>
+                        <div class="col l-4">Item 2</div>
+                        <div class="col l-4">Item 3</div>
+                        <!-- 3 cái nó rụng xuống dưới do css bên style-level-1 line-height quá cao -->
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
