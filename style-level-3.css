@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    margin-top: 16px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    min-height: 180px;
+    line-height: 180px;
+    background-color: orange;
+}
+
+.main {
+    display: flex;
+    padding: 0 32px;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: blueviolet;
+}
+
+.content {
+    flex-grow: 1;
+    /* 100% - 300px (của sidebar) còn lại bao nhiêu thì thằng này chiếm hết */
+    background-color: antiquewhite;
+}
+
+@media (min-width: 740px)  and (max-width: 1223px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    /* 2 cái trên này không có trong video, mình để thêm tại thấy như vậy đẹp hơn */
+
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
