@@ -1,0 +1,13 @@
+@media (min-width: 1113px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+/* Thêm cái này vào file mới, để không ảnh hưởng cái Grid Library */

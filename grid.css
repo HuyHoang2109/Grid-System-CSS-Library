@@ -335,6 +335,7 @@ Xem Column offset 4:10 để hiểu */
         max-width: 16.66667%;
     }
 
+    /* Gọi là cột 2.4. Từ l-10, bên trong nó có 5 item cần hiển thị, thì mỗi item là 24% (12/5=2.4)*/
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
